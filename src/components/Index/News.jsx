@@ -6,12 +6,14 @@ const News = () => {
     return (
         <div className='mt-[17px]'>
             <Title title={"Yangiliklar"} />
-            <div className='container flex flex-row justify-between items-center pt-[19px]'>
+            <div className='container flex flex-wrap justify-between items-center pt-[19px]'>
                 {
                     newsList.map((item, index) => {
                         return (
-                            <div className='w-[380px] h-auto rounded-[26px] shadow-md bg-white'>
-                                <img className='w-full mb-[23px]' src={item.poster} alt={item.title} />
+                            <div className='xs:w-full lg:w-[380px]   h-auto rounded-[26px] shadow-md bg-white hover:shadow-xl ease-linear duration-150 service-card xs:mt-3'>
+                                <div className='truncate w-full h-[280px] rounded-tl-[26px] rounded-tr-[26px]'>
+                                <img className='w-full mb-[23px] service-card__img' src={item.poster} alt={item.title} />
+                                </div>
                                 <div className='px-4 pb-3'>
                                     <p className='font-bold text-base mb-[15px]'>{item.title}</p>
                                     <p className='font-medium text-base montserrat leading-5 mb-[10px]'>{item.description}</p>

@@ -18,9 +18,11 @@
   "dependencies": {
     "antd": "^5.4.2",
     "gatsby": "^5.8.1",
+    "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "swiper": "^9.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

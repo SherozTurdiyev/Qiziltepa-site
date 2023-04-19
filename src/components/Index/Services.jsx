@@ -10,7 +10,7 @@ const Services = () => {
                 {
                     servicesList.map((item , index)=>{
                         return(
-                            <div className='service-card w-[210px] h-[184px] bg-white rounded-[26px] pt-[42px] text-center pb-[20px]'  >
+                            <div className='service-card xs:w-full md:w-[50%] lg:w-[210px] h-[184px] bg-white rounded-[26px] pt-[42px] text-center pb-[20px] xs:mt-3'  >
                                 <img className='service-card__img w-[51px] h-[51px] m-auto mb-[22px] font-black pb-22px' src={item.icon} alt={item.label} />
                                 <p className='font-semibold text-xl w-[100px] m-auto'> {item.label}</p>
                             </div>

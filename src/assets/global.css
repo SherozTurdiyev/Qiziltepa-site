@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   font-family: "Montserrat", sans-serif !important;
 }
 
@@ -17,7 +17,6 @@ body{
   max-width: 1280px !important;
   margin: 0 auto !important;
 }
-
 
 .montserrat {
   font-family: "Montserrat", sans-serif !important;
@@ -37,20 +36,35 @@ body{
 }
 
 /* service card */
-.service-card{
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.03) !important;
-    transition: .3s;
+.service-card {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.03) !important;
+  transition: 0.3s;
 }
 
-.service-card:hover{
+.service-card:hover {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2) !important;
   transition: 0.3s;
 }
 
-.service-card__img{
-  transition: 0.3s; 
+.service-card__img {
+  transition: 0.3s;
 }
-.service-card:hover .service-card__img{
+.service-card:hover .service-card__img {
   transform: scale(1.05);
   transition: 0.3s;
+}
+
+/* swiper slide novigation */
+
+.swiper-button-next , .swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: rgba(217, 217, 217, 0.4);
+  border-radius: 50%;
+  color: white;
+
+}
+.swiper-button-next:after , .swiper-button-prev:after {
+  font-size: 15px !important;
+  color: white !important;
 }
